@@ -1,3 +1,49 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "/"
+languageCode = "ja"
+theme = "terminal"
+title = "blog"
+paginate = 5
+
+[params]
+    # dir name of your blog content (default is `content/posts`)
+    contentTypeName = "posts"
+    # ["orange", "blue", "red", "green", "pink"]
+    themeColor = "blue"
+    # if you set this to 0, only submenu trigger will be visible
+    showMenuItems = 3
+    # show selector to switch language
+    showLanguageSelector = false
+    # set theme to full screen width
+    fullWidthTheme = false
+    # center theme with default width
+    centerTheme = false
+    # set a custom favicon (default is a `themeColor` square)
+    favicon = "favicon.ico"
+    # set all headings to their default size (depending on browser settings)
+    # it's set to `true` by default
+    # oneHeadingSize = false
+    subtitle = "just weblog."
+    keywords = ""
+    copyright = ""
+    author = "kazuto"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+
+[params.logo]
+logoText = "aaaaa"
+logoHomeLink = "/"
+
+[menu]
+[[menu.main]]
+name = "Posts"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 2
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
