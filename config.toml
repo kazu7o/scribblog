@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "ja"
 theme = "terminal"
-title = "blog"
+title = "kazuto"
 paginate = 5
 
 [params]
@@ -16,7 +16,7 @@ paginate = 5
     # set theme to full screen width
     fullWidthTheme = false
     # center theme with default width
-    centerTheme = false
+    centerTheme = true
     # set a custom favicon (default is a `themeColor` square)
     favicon = "favicon.ico"
     # set all headings to their default size (depending on browser settings)
@@ -30,8 +30,11 @@ paginate = 5
     readMore = "Read more"
     readOtherPosts = "Read other posts"
 
+[taxonomies]
+tag = "tags"
+
 [params.logo]
-logoText = "aaaaa"
+logoText = "kazuto"
 logoHomeLink = "/"
 
 [menu]
@@ -39,10 +42,12 @@ logoHomeLink = "/"
 name = "Posts"
 url = "/"
 weight = 1
+
 [[menu.main]]
 name = "Tags"
 url = "/tags"
 weight = 2
+
 [[menu.main]]
 name = "About"
 url = "/about"

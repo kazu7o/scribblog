@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="post">
+  <h1 class="post-title">
+    <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+  </h1>
+
+  <ul class="">{{ $plural := .Data.Plural }}
+  {{ range $key, $value := .Data.Terms }}
+      <li><a href="/{{ $plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})</li>
+  {{ end }}
+  </ul>
+</div>
+{{ end }}
